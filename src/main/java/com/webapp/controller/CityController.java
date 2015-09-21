@@ -38,6 +38,10 @@ public class CityController {
 	@Autowired
 	CityCommandValidator validator;
 	
+	String getCities() {
+		return "";
+	}
+	
 	@RequestMapping("/district/{countrycode:[A-Z]{3}}") // 현대적인 방식
 	String getDistricts(@PathVariable String countrycode, Model model) {
 		log.info("getDistricts() ... countryCode = " + countrycode);
